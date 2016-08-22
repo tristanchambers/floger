@@ -15,6 +15,7 @@ class Ingredient(models.Model):
 
 class Flog(models.Model):
     date = models.DateField()
+    notes = models.TextField()
 
     def __str__(self):
         return '%s' % (self.date)
